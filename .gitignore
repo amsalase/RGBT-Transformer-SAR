@@ -1,0 +1,133 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ============================================================
+# Virtual environments
+# ============================================================
+.venv/
+venv/
+env/
+ENV/
+
+# ============================================================
+# IDE / editor
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ============================================================
+# Logs and generated output
+# ============================================================
+*.log
+*.out
+*.err
+
+outputs/
+logs/
+runs/
+
+# ============================================================
+# TensorBoard
+# ============================================================
+events.out.tfevents.*
+**/tensorboard/
+**/tb/
+
+# ============================================================
+# Model weights / checkpoints
+# ============================================================
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Keep checkpoint documentation
+!checkpoints/README.md
+!checkpoints/SHA256SUMS
+
+# ============================================================
+# Pretrained backbone weights
+# ============================================================
+pretrained/*
+!pretrained/README.md
+
+# ============================================================
+# Dataset
+#
+# Dataset images/masks are distributed separately.
+# Documentation and official split files may remain in Git.
+# ============================================================
+dataset/rgb/
+dataset/tir/
+dataset/masks/
+dataset/images/
+dataset/labels/
+
+# Common large data formats
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.mat
+
+# ============================================================
+# Evaluation / prediction products
+# ============================================================
+predictions/
+predictions_raw/
+predictions_colored/
+predictions_colored_test/
+
+phase4_results/
+phase5_results/
+phase5b_results/
+phase5_corrected_results/
+phase5c_all_test_results/
+phase5c_corrected_results/
+phase6_efficiency_results/
+
+# ============================================================
+# Training artifacts
+# ============================================================
+experiments/
+checkpoints/*/*.pth
+checkpoints/*/*.pt
+checkpoints/*/*.ckpt
+
+# ============================================================
+# Temporary / backup files
+# ============================================================
+*.bak
+*.backup
+*.old
+*.old~
+*.tmp
+*.temp
+
+# ============================================================
+# Archives
+# ============================================================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# ============================================================
+# Local environment configuration
+# ============================================================
+.env
+.env.*
