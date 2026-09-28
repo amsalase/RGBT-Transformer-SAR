@@ -100,6 +100,7 @@ dataset/
     ├── test_day.txt
     ├── test_night.txt
     └── test_tunel.txt
+```
 
 The RGB, TIR, and mask filenames referenced by the split files must retain
 their original names.
