@@ -101,7 +101,7 @@ dataset/
     ├── test_night.txt
     └── test_tunel.txt
 
-he RGB, TIR, and mask filenames referenced by the split files must retain
+The RGB, TIR, and mask filenames referenced by the split files must retain
 their original names.
 Official splits
 The following split files are included directly in this GitHub repository:
@@ -170,9 +170,6 @@ Notes
 - Training/evaluation resolution used by the models: 480 x 480.
 - Ignore label: 255.
 - Number of predicted semantic classes: 12.
-  EOF
-
-
 
 ## Dataset integrity verification
 
