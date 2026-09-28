@@ -173,3 +173,16 @@ Notes
   EOF
 
 
+
+## Dataset integrity verification
+
+A SHA256 manifest for the released dataset is included in:
+
+```text
+dataset/SHA256SUMS
+After downloading and extracting the dataset, its integrity can be
+verified from the dataset root with:
+sha256sum -c SHA256SUMS
+
+The manifest covers the RGB images, TIR images, semantic masks, and
+official split files used in the experiments.
