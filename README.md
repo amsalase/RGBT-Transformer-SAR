@@ -429,26 +429,6 @@ Predictions can be saved using the evaluator's `--save_path` argument.
 
 ---
 
-## Reproducibility notes
-
-The released checkpoints correspond to the original experimental runs.
-
-The original training protocol used `cudnn.benchmark = True` and was not
-configured for fully deterministic execution. Therefore, retraining from
-scratch is not expected to reproduce checkpoint files bit-for-bit and may
-produce small numerical differences in the final metrics.
-
-For the original CMX and V2.0 training code, the distributed seed was
-derived from the local process rank.
-
-For the original V2.2 run, the distributed seed was based on the
-configured seed plus the distributed process rank.
-
-The repository preserves these training behaviors for traceability of the
-released models.
-
----
-
 ## Upstream CMX attribution
 
 The CMX baseline is derived from the official implementation of:
