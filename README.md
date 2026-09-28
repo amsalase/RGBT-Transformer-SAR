@@ -198,12 +198,7 @@ with the released `epoch-300.pth` checkpoints.
 | V2.0 | 83.768% | 82.588% | 75.551% | 75.792% |
 | V2.2 | 84.101% | 82.961% | 74.980% | 75.736% |
 
-These values describe the original single training runs. They should not
-be interpreted as statistical evidence that one architecture is
-universally superior to another.
-
-Later multi-seed and train/validation experiments are not included among
-the released checkpoints in this repository.
+These values describe the original training runs.
 
 ### Model complexity
 
