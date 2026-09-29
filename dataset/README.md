@@ -115,9 +115,9 @@ splits/test_night.txt
 splits/test_tunel.txt
 
 1. Training split
-    `train.txt`
-- 426 RGB-T pairs.
-- Used for training the models associated with the released checkpoints.
+    - `train.txt`
+    - 426 RGB-T pairs.
+    - Used for training the models associated with the released checkpoints.
 
 Full test split
 test.txt
