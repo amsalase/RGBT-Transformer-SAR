@@ -145,7 +145,7 @@ By default, the code expects the dataset under:
 `RGBT_Transformer_Github/dataset/`
 
 A different location can be provided through the environment variable:
-`export RGBT_DATASET_ROOT=/path/to/dataset
+`export RGBT_DATASET_ROOT=/path/to/dataset`
 
 The directory referenced by RGBT_DATASET_ROOT must contain:
 ```
@@ -153,14 +153,14 @@ rgb/
 tir/
 masks/
 splits/
-´´´
+```
 
 For example:
 ```
 export RGBT_DATASET_ROOT=/data/RGBT_SAR
 cd V2_2
 python eval.py
-´´´
+```
 
 ## Dataset download
 The complete RGB-T dataset will be made available separately.
@@ -169,7 +169,9 @@ Download:
 
 After downloading it, place or extract the data following the directory
 structure described above.
-Reproducibility
+
+## Reproducibility
+
 The split files included in this repository define the exact experimental
 partition used for the main CMX, V2.0, and V2.2 comparison.
 The training and test sets are frame-level partitions. Exact frames do not
@@ -177,7 +179,9 @@ overlap between training and test sets.
 Because multiple frames may originate from the same acquisition scenes,
 the evaluation should be interpreted as an in-distribution frame-level
 evaluation rather than a scene-disjoint generalization experiment.
-Notes
+
+## Notes
+
 - RGB image format: PNG.
 - TIR image format: PNG.
 - Semantic-mask format: PNG.
@@ -188,12 +192,10 @@ Notes
 ## Dataset integrity verification
 
 A SHA256 manifest for the released dataset is included in:
-
-```text
-dataset/SHA256SUMS
+`dataset/SHA256SUMS`
 After downloading and extracting the dataset, its integrity can be
 verified from the dataset root with:
-sha256sum -c SHA256SUMS
+`sha256sum -c SHA256SUMS`
 
 The manifest covers the RGB images, TIR images, semantic masks, and
 official split files used in the experiments.
