@@ -104,7 +104,9 @@ dataset/
 
 The RGB, TIR, and mask filenames referenced by the split files must retain
 their original names.
+
 Official splits
+
 The following split files are included directly in this GitHub repository:
 splits/train.txt
 splits/test.txt
@@ -116,19 +118,24 @@ Training split
 train.txt
 - 426 RGB-T pairs.
 - Used for training the models associated with the released checkpoints.
+
 Full test split
 test.txt
 - 184 RGB-T pairs.
 - Used to compute the main full-test semantic segmentation results.
+
 Day test split
 test_day.txt
 - 103 RGB-T pairs.
+
 Tunnel test split
 test_tunel.txt
 - 63 RGB-T pairs.
+
 Night test split
 test_night.txt
 - 18 RGB-T pairs.
+
 The three condition-specific test subsets are mutually exclusive and
 together constitute the complete 184-image test set.
 Dataset configuration
