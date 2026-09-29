@@ -119,47 +119,53 @@ splits/test_tunel.txt
     - 426 RGB-T pairs.
     - Used for training the models associated with the released checkpoints.
 
-Full test split
-test.txt
-- 184 RGB-T pairs.
-- Used to compute the main full-test semantic segmentation results.
+2. Full test split
+    - `test.txt`
+    - 184 RGB-T pairs.
+    - Used to compute the main full-test semantic segmentation results.
 
-Day test split
-test_day.txt
-- 103 RGB-T pairs.
+3. Day test split
+    - `test_day.txt`
+    - 103 RGB-T pairs.
 
-Tunnel test split
-test_tunel.txt
-- 63 RGB-T pairs.
+4. Tunnel test split
+    - `test_tunel.txt`
+    - 63 RGB-T pairs.
 
-Night test split
-test_night.txt
-- 18 RGB-T pairs.
+5. Night test split
+    - `test_night.txt`
+    - 18 RGB-T pairs.
 
 The three condition-specific test subsets are mutually exclusive and
 together constitute the complete 184-image test set.
-Dataset configuration
+
+## Dataset configuration
+
 By default, the code expects the dataset under:
-RGBT_Transformer_Github/dataset/
+`RGBT_Transformer_Github/dataset/`
 
 A different location can be provided through the environment variable:
-export RGBT_DATASET_ROOT=/path/to/dataset
+`export RGBT_DATASET_ROOT=/path/to/dataset
 
 The directory referenced by RGBT_DATASET_ROOT must contain:
+```
 rgb/
 tir/
 masks/
 splits/
+´´´
 
 For example:
+```
 export RGBT_DATASET_ROOT=/data/RGBT_SAR
 cd V2_2
 python eval.py
+´´´
 
-Dataset download
+## Dataset download
 The complete RGB-T dataset will be made available separately.
 Download:
-[OneDrive dataset link to be added]
+[RGB-T Semantic Segmentation UMA-SAR Dataset](https://uma365-my.sharepoint.com/:f:/g/personal/061994342x_uma_es/IgArj3fMeQhdTpArL_1l-TTQAdPmkKi5fTM-pWOneSO7dpU?e=7fibIu)
 
 After downloading it, place or extract the data following the directory
 structure described above.
