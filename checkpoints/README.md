@@ -54,20 +54,20 @@ sha256sum -c SHA256SUMS
 All three files should report OK.
 Evaluation
 Each model can automatically locate its released checkpoint.
-For CMX:
 
+__For CMX:__
 ```
 cd CMX
 python eval.py
 ```
 
-For V2.0:
+__For V2.0:__
 ```
 cd V2_0
 python eval.py
 ```
 
-For V2.2:
+__For V2.2:__
 
 ```
 cd V2_2
