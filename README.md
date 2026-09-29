@@ -303,7 +303,7 @@ See `pretrained/README.md`.
 ## Released checkpoints
 
 The trained checkpoints are not committed to GitHub because each file is
-approximately 2 GB.
+approximately 2 GB. Therefore, you can downloaded from here: [CMX](https://uma365-my.sharepoint.com/:f:/g/personal/061994342x_uma_es/IgB_DmDNLJdXTIu5_6S2btUjAad7lQ0kBkuQlDR9EbwdGZA?e=F4qT1p), [V2.2](https://uma365-my.sharepoint.com/:f:/g/personal/061994342x_uma_es/IgBdXuC8p4OkSawX1yqpMCFDAf7Q-hsTNjZyVv8-DHVOFMs?e=oCGlFJ), [V2.0](https://uma365-my.sharepoint.com/:f:/g/personal/061994342x_uma_es/IgACrjezNw6qRpcX8KKoMamxASb4nlZTc5GO72ueUPYQyk4?e=JNrxIZ)
 
 Expected structure:
 
