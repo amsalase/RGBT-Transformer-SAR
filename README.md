@@ -303,7 +303,7 @@ See `pretrained/README.md`.
 ## Released checkpoints
 
 The trained checkpoints are not committed to GitHub because each file is
-approximately 2 GB. Therefore, you can downloaded from here: [CMX](https://uma365-my.sharepoint.com/:f:/g/personal/061994342x_uma_es/IgB_DmDNLJdXTIu5_6S2btUjAad7lQ0kBkuQlDR9EbwdGZA?e=F4qT1p), [V2.2](https://uma365-my.sharepoint.com/:f:/g/personal/061994342x_uma_es/IgBdXuC8p4OkSawX1yqpMCFDAf7Q-hsTNjZyVv8-DHVOFMs?e=oCGlFJ), [V2.0](https://uma365-my.sharepoint.com/:f:/g/personal/061994342x_uma_es/IgACrjezNw6qRpcX8KKoMamxASb4nlZTc5GO72ueUPYQyk4?e=JNrxIZ)
+approximately 2 GB. Therefore, you can downloaded from here: [CMX](https://uma365-my.sharepoint.com/:f:/g/personal/061994342x_uma_es/IgB_DmDNLJdXTIu5_6S2btUjAad7lQ0kBkuQlDR9EbwdGZA?e=F4qT1p), [V2.2/MiT-B5](https://uma365-my.sharepoint.com/:f:/g/personal/061994342x_uma_es/IgBCPFSCBc9mQq6Sm6isc3IGAeEdvz4WbAVWVdpbg9JWJco?e=Vke3SW), [V2.2/MiT-B0](https://uma365-my.sharepoint.com/:f:/g/personal/061994342x_uma_es/IgDrG6Lko5TiQZdqSKqUAKqiAXkPXvfpvgFzus-PlukqVd0?e=3Agft5), [V2.0](https://uma365-my.sharepoint.com/:f:/g/personal/061994342x_uma_es/IgACrjezNw6qRpcX8KKoMamxASb4nlZTc5GO72ueUPYQyk4?e=JNrxIZ)
 
 Expected structure:
 
@@ -313,8 +313,11 @@ checkpoints/
 │   └── epoch-300.pth
 ├── V2_0/
 │   └── epoch-300.pth
-└── V2_2/
-    └── epoch-300.pth
+├── V2_2/
+|    ├── mit_b5/
+|    |       └── epoch-300.pth
+|    └── mit_b0/
+             └── epoch-300.pth   
 ```
 
 Integrity hashes:
@@ -323,7 +326,8 @@ Integrity hashes:
 |---|---|
 | CMX | `7723f37b075774826a26afa7882fcd958b920c5ed5eab81e951ffc107c190158` |
 | V2.0 | `7836a1b4eb2b7461820db19d77e2f9c27ba3730a46a390fe50cf7c34e9766030` |
-| V2.2 | `fa09631877ba16508229b90a3aa5fa7fb2bf20feb27638e6cac26849b216109b` |
+| V2_2/mit_b5/ | `fa09631877ba16508229b90a3aa5fa7fb2bf20feb27638e6cac26849b216109b` |
+| V2_2/mit_b0/ | `d3694fa4b6ca15a3de96a6469d20107ae0e7f2a7468aaa1751962bdc36ad7ded` |
 
 The same values are stored in `checkpoints/SHA256SUMS`.
 
