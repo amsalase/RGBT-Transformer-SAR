@@ -16,18 +16,34 @@ checkpoints/
 ├── V2_0/
 │   └── epoch-300.pth
 ├── V2_2/
-│   └── epoch-300.pth
+│   ├── mit_bo
+|   |       └──epoch-300.pth
+|   ├── mit_b1
+|   |       └──epoch-300.pth
+|   ├── mit_b2
+|   |       └──epoch-300.pth
+|   ├── mit_b3
+|   |       └──epoch-300.pth
+|   ├── mit_b4
+|   |       └──epoch-300.pth
+|   ├── mit_b5
+|   |       └──epoch-300.pth
 ├── README.md
 └── SHA256SUMS
 ```
 
 ## Released checkpoints
 
-|ModelCheckpoint|   Full-test           |   mIoU    |
-|---------------|  :------------------: |  :-------:|  
-|CMX            |   CMX/epoch-300.pth   |   83.275% |
-|V2.0           |   V2_0/epoch-300.pth  |   83.768% |
-|V2.2           |   V2_2/epoch-300.pth  |   84.101% |
+|ModelCheckpoint|   Full-test                   |   mIoU    |
+|---------------|:-----------------------------:|:---------:|  
+|CMX            |   CMX/epoch-300.pth           |   83.275% |
+|V2.0           |   V2_0/epoch-300.pth          |   83.768% |
+|V2.2_mit_b5    |   V2_2/mit_b5/epoch-300.pth   |   84.101% |
+|V2.2_mit_b4    |   V2_2/mit_b4/epoch-300.pth   |   --.---% |
+|V2.2_mit_b3    |   V2_2/mit_b3/epoch-300.pth   |   --.---% |
+|V2.2_mit_b2    |   V2_2/mit_b2/epoch-300.pth   |   --.---% |
+|V2.2_mit_b1    |   V2_2/mit_b1/epoch-300.pth   |   83.530% |
+|V2.2_mit_b0    |   V2_2/mit_b0/epoch-300.pth   |   82.300% |
 
 
 These are the original training-run checkpoints used for the main
@@ -41,8 +57,23 @@ CMX–V2.0–V2.2 comparison.
 - V2.0
     - 7836a1b4eb2b7461820db19d77e2f9c27ba3730a46a390fe50cf7c34e9766030
 
-- V2.2
+- V2.2/mit_b5
     - fa09631877ba16508229b90a3aa5fa7fb2bf20feb27638e6cac26849b216109b
+
+- V2.2/mit_b4
+    - xxx
+
+- V2.2/mit_b3
+    - xxx
+
+- V2.2/mit_b2
+    - xxx
+
+- V2.2/mit_b1
+    - cf7e48d1ddbfd63c1fd07dbae732272cce9d13667d6207e497f01438dca583e0
+
+- V2.2/mit_b0
+    - d3694fa4b6ca15a3de96a6469d20107ae0e7f2a7468aaa1751962bdc36ad7ded
 
 After downloading the checkpoints and placing them in the expected
 directories, verify their integrity with:
